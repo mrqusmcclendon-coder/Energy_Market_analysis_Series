@@ -1,0 +1,1057 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Market Briefs — Canada-China EV Deal</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --ink:     #0f0e0c;
+  --paper:   #faf8f4;
+  --cream:   #f2ede4;
+  --red:     #bf1a2f;
+  --gold:    #a07830;
+  --green:   #1a6b3c;
+  --steel:   #1e2d3d;
+  --muted:   #6b6258;
+  --rule:    #ddd5c5;
+  --up:      #1a6b3c;
+  --down:    #bf1a2f;
+  --neutral: #a07830;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+html { scroll-behavior: smooth; }
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: 'Libre Baskerville', Georgia, serif;
+  font-size: 17px;
+  line-height: 1.8;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ── MASTHEAD ── */
+.masthead {
+  background: var(--ink);
+  padding: 32px 24px 24px;
+  text-align: center;
+  border-bottom: 2px solid var(--gold);
+}
+.pub-tag {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 5px;
+  color: var(--gold);
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+.pub-name {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2.8rem, 6vw, 5rem);
+  font-weight: 900;
+  color: #faf8f4;
+  letter-spacing: -2px;
+  line-height: 1;
+}
+.pub-meta {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  color: rgba(250,248,244,0.35);
+  letter-spacing: 3px;
+  margin-top: 12px;
+}
+
+/* ── HERO ── */
+.hero {
+  background: var(--steel);
+  padding: 60px 24px 52px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--red) 0%, var(--gold) 50%, var(--red) 100%);
+}
+.hero-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 4px;
+  color: var(--red);
+  margin-bottom: 18px;
+  text-transform: uppercase;
+}
+.hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.9rem, 4vw, 3.2rem);
+  font-weight: 900;
+  color: #faf8f4;
+  line-height: 1.15;
+  max-width: 700px;
+  margin: 0 auto 20px;
+}
+.hero-title em { color: var(--gold); font-style: normal; }
+.hero-sub {
+  font-family: 'Libre Baskerville', serif;
+  font-style: italic;
+  font-size: 15px;
+  color: rgba(250,248,244,0.5);
+  max-width: 520px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* ── LAYOUT ── */
+.wrap { max-width: 740px; margin: 0 auto; padding: 0 20px; }
+
+/* ── NAV PILLS ── */
+.nav-pills {
+  display: flex;
+  gap: 8px;
+  padding: 20px 20px;
+  border-bottom: 1px solid var(--rule);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.nav-pills::-webkit-scrollbar { display: none; }
+.pill {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 10px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding: 6px 14px;
+  border: 1px solid var(--rule);
+  color: var(--muted);
+  text-decoration: none;
+  white-space: nowrap;
+  transition: all 0.2s;
+  cursor: pointer;
+}
+.pill:hover, .pill.active { background: var(--ink); color: #faf8f4; border-color: var(--ink); }
+
+/* ── ARTICLE CONTENT ── */
+.article { padding: 48px 0 24px; }
+
+p { margin-bottom: 20px; font-size: 16.5px; }
+
+.section-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 4px;
+  color: var(--muted);
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  display: block;
+}
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 700;
+  color: var(--ink);
+  margin-bottom: 20px;
+  line-height: 1.2;
+  padding-bottom: 14px;
+  border-bottom: 2px solid var(--ink);
+}
+.subsection-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: var(--ink);
+  margin: 36px 0 10px;
+}
+
+/* ── PULL QUOTE ── */
+.pull {
+  border-left: 3px solid var(--red);
+  margin: 32px 0;
+  padding: 14px 22px;
+  background: rgba(191,26,47,0.04);
+}
+.pull blockquote {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.1rem;
+  color: var(--ink);
+  line-height: 1.55;
+}
+.pull cite {
+  display: block;
+  margin-top: 10px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 2px;
+  color: var(--muted);
+  font-style: normal;
+}
+
+/* ── STAT STRIP ── */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  border: 1px solid var(--rule);
+  margin: 28px 0;
+  background: var(--rule);
+  gap: 1px;
+}
+.stat {
+  background: var(--paper);
+  padding: 20px 16px;
+  text-align: center;
+}
+.stat-n {
+  font-family: 'Playfair Display', serif;
+  font-size: 2rem;
+  font-weight: 900;
+  color: var(--red);
+  display: block;
+  line-height: 1;
+}
+.stat-n.up   { color: var(--green); }
+.stat-n.gold { color: var(--gold); }
+.stat-l {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  color: var(--muted);
+  margin-top: 6px;
+  display: block;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+/* ── PART BREAK ── */
+.part-break {
+  margin: 60px 0 40px;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 20px;
+}
+.part-num-badge {
+  background: var(--ink);
+  color: #faf8f4;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 3px;
+  padding: 8px 14px;
+  white-space: nowrap;
+}
+.part-break-line { height: 2px; background: var(--ink); }
+
+/* ── PERFORMANCE TABLE ── */
+.perf-table-wrap {
+  margin: 28px 0;
+  border: 1px solid var(--rule);
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+table.perf {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  min-width: 560px;
+}
+table.perf thead tr {
+  background: var(--ink);
+}
+table.perf thead th {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: rgba(250,248,244,0.55);
+  padding: 11px 14px;
+  text-align: left;
+  white-space: nowrap;
+  font-weight: 400;
+}
+table.perf tbody tr { border-bottom: 1px solid var(--rule); transition: background 0.15s; }
+table.perf tbody tr:hover { background: var(--cream); }
+table.perf tbody td { padding: 11px 14px; vertical-align: middle; }
+.ticker-sym {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--steel);
+}
+.company-name { font-size: 12px; color: var(--muted); display: block; margin-top: 1px; }
+.ret-up   { font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: var(--green); font-weight: 500; }
+.ret-down { font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: var(--red); font-weight: 500; }
+.ret-neu  { font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: var(--neutral); font-weight: 500; }
+.price-now { font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: var(--ink); }
+.thesis-cell { font-size: 12px; color: var(--muted); font-style: italic; max-width: 180px; }
+.badge {
+  display: inline-block;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 1px;
+  padding: 3px 8px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+.badge-bull   { background: #e8f5ee; color: var(--green); border: 1px solid #b8ddc8; }
+.badge-bear   { background: #fdeef0; color: var(--red);   border: 1px solid #f0c0c8; }
+.badge-watch  { background: #fdf5e8; color: var(--gold);  border: 1px solid #e0c880; }
+.badge-spec   { background: #eef3fa; color: var(--steel); border: 1px solid #b8cce0; }
+
+/* ── RETURN SPARKLINE ── */
+.spark-wrap { display: flex; align-items: center; gap: 8px; }
+.spark-bar {
+  height: 6px;
+  border-radius: 3px;
+  display: inline-block;
+  vertical-align: middle;
+  min-width: 4px;
+}
+
+/* ── TRADE CARD ── */
+.trade-card {
+  border: 1px solid var(--rule);
+  margin: 24px 0;
+  overflow: hidden;
+}
+.trade-card-header {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  padding: 16px 20px;
+  background: var(--cream);
+  border-bottom: 1px solid var(--rule);
+  gap: 12px;
+}
+.trade-ticker {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--ink);
+}
+.trade-company { font-size: 13px; color: var(--muted); font-style: italic; margin-top: 2px; }
+.trade-price {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: var(--ink);
+  text-align: right;
+}
+.trade-ret { font-size: 11px; text-align: right; margin-top: 2px; }
+.trade-body { padding: 18px 20px; }
+.trade-body p { font-size: 15px; margin-bottom: 14px; color: var(--ink); }
+.trade-levels {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: var(--rule);
+  border: 1px solid var(--rule);
+  margin-top: 16px;
+}
+.level-cell {
+  background: var(--paper);
+  padding: 12px 14px;
+}
+.level-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 2px;
+  color: var(--muted);
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.level-val {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--ink);
+}
+.level-val.entry  { color: var(--steel); }
+.level-val.target { color: var(--green); }
+.level-val.stop   { color: var(--red); }
+.level-val.horizon{ color: var(--gold); }
+
+/* ── SCATTER VISUALIZATION ── */
+.vis-container {
+  margin: 32px 0;
+  border: 1px solid var(--rule);
+  background: #fff;
+  overflow: hidden;
+}
+.vis-header {
+  background: var(--steel);
+  padding: 12px 20px;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 3px;
+  color: rgba(250,248,244,0.55);
+  text-transform: uppercase;
+}
+.vis-body { padding: 0; }
+.chart-svg-wrap { width: 100%; overflow: hidden; }
+
+/* ── RISK TABLE ── */
+.risk-table-wrap {
+  margin: 28px 0;
+  border: 1px solid var(--rule);
+  overflow-x: auto;
+}
+table.risk {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+  min-width: 480px;
+}
+table.risk thead tr { background: var(--steel); }
+table.risk thead th {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 2px;
+  color: rgba(250,248,244,0.55);
+  padding: 10px 14px;
+  text-align: left;
+  font-weight: 400;
+}
+table.risk tbody tr { border-bottom: 1px solid var(--rule); }
+table.risk tbody tr:hover { background: var(--cream); }
+table.risk tbody td { padding: 11px 14px; vertical-align: top; font-size: 13px; }
+.risk-high   { color: var(--red);    font-family: 'IBM Plex Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: 1px; }
+.risk-med    { color: var(--gold);   font-family: 'IBM Plex Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: 1px; }
+.risk-low    { color: var(--green);  font-family: 'IBM Plex Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: 1px; }
+
+/* ── BOTTOM LINE ── */
+.bottom-line {
+  background: var(--ink);
+  padding: 36px 32px;
+  margin: 48px 0 32px;
+  position: relative;
+}
+.bottom-line::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--red), var(--gold));
+}
+.bl-label {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 4px;
+  color: var(--gold);
+  margin-bottom: 14px;
+  text-transform: uppercase;
+}
+.bottom-line p { color: rgba(250,248,244,0.8); font-size: 15px; margin-bottom: 12px; }
+.bl-table-wrap { margin-top: 20px; overflow-x: auto; }
+table.bl {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+  min-width: 440px;
+}
+table.bl thead tr { border-bottom: 1px solid rgba(250,248,244,0.15); }
+table.bl thead th {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 2px;
+  color: rgba(250,248,244,0.4);
+  padding: 8px 12px;
+  text-align: left;
+  font-weight: 400;
+}
+table.bl tbody tr { border-bottom: 1px solid rgba(250,248,244,0.08); }
+table.bl tbody td { padding: 10px 12px; color: rgba(250,248,244,0.75); }
+table.bl .bl-sym { font-family: 'IBM Plex Mono', monospace; color: #faf8f4; font-size: 12px; }
+table.bl .bl-green { color: #6fcf97; font-family: 'IBM Plex Mono', monospace; }
+table.bl .bl-gold  { color: #f2c464; font-family: 'IBM Plex Mono', monospace; }
+
+/* ── FOOTER ── */
+.footer {
+  border-top: 1px solid var(--rule);
+  padding: 28px 0 36px;
+  text-align: center;
+}
+.footer-name {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.5rem;
+  font-weight: 900;
+  color: var(--ink);
+  margin-bottom: 8px;
+}
+.footer-note {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 9px;
+  letter-spacing: 2px;
+  color: var(--muted);
+  line-height: 2;
+}
+.footer-disc {
+  font-size: 12px;
+  color: var(--muted);
+  max-width: 500px;
+  margin: 12px auto 0;
+  font-style: italic;
+  line-height: 1.6;
+}
+
+/* ── DIVIDER ── */
+hr.rule {
+  border: none;
+  border-top: 1px solid var(--rule);
+  margin: 40px 0;
+}
+
+/* ── RESPONSIVE ── */
+@media (max-width: 600px) {
+  .stats { grid-template-columns: 1fr 1fr; }
+  .stats .stat:last-child { grid-column: span 2; }
+  .trade-levels { grid-template-columns: 1fr 1fr; }
+  .part-break { grid-template-columns: 1fr; gap: 8px; }
+  .part-break-line { display: none; }
+}
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.hero-title, .hero-sub { animation: fadeUp 0.6s ease both; }
+.hero-sub { animation-delay: 0.15s; }
+</style>
+</head>
+<body>
+
+<!-- MASTHEAD -->
+<div class="masthead">
+  <div class="pub-tag">Independent Research · March 8, 2026</div>
+  <div class="pub-name">MARKET BRIEFS</div>
+  <div class="pub-meta">Issue #13 &nbsp;·&nbsp; Subscriber Edition &nbsp;·&nbsp; Not Financial Advice</div>
+</div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-label">Special Report</div>
+  <h1 class="hero-title">The Canada–China EV Deal:<br><em>Short-Term Trades</em> & Long-Term Positions</h1>
+  <p class="hero-sub">Ottawa rewrote the North American auto playbook. Here's exactly how much investors have made — and where the next moves are.</p>
+</div>
+
+<!-- NAV -->
+<div class="nav-pills">
+  <a class="pill active" href="#snapshot">Snapshot</a>
+  <a class="pill" href="#short">Short-Term Trades</a>
+  <a class="pill" href="#long">Long-Term Plays</a>
+  <a class="pill" href="#map">Compare & Contrast</a>
+  <a class="pill" href="#risks">Risks</a>
+  <a class="pill" href="#bottom">Bottom Line</a>
+</div>
+
+<div class="wrap">
+  <div class="article">
+
+    <p>Prime Minister Carney's January 16 deal with China wasn't just about canola tariffs. By slashing EV duties from <strong>106% to 6.1%</strong> in exchange for joint ventures, Ottawa rewrote the playbook for North American auto manufacturing. This report separates what traders can act on <em>right now</em> from what investors should build over the next two years.</p>
+
+    <!-- ══ PERFORMANCE SNAPSHOT ══ -->
+    <div id="snapshot"></div>
+    <div class="part-break">
+      <div class="part-num-badge">PERFORMANCE SNAPSHOT</div>
+      <div class="part-break-line"></div>
+    </div>
+    <span class="section-label">Jan 16 Deal Date → Mar 8, 2026</span>
+    <h2 class="section-title">How These Plays Have Performed</h2>
+
+    <div class="perf-table-wrap">
+      <table class="perf">
+        <thead>
+          <tr>
+            <th>Ticker</th>
+            <th>Current Price</th>
+            <th>Since Deal</th>
+            <th>1-Year Return</th>
+            <th>Signal</th>
+            <th>Thesis</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>
+              <div class="ticker-sym">LNR.TO</div>
+              <div class="company-name">Linamar</div>
+            </td>
+            <td><span class="price-now">C$93.53</span></td>
+            <td>
+              <div class="spark-wrap">
+                <span class="spark-bar" style="width:40px;background:var(--green);"></span>
+                <span class="ret-up">+29.9%</span>
+              </div>
+            </td>
+            <td><span class="ret-up">+79.9%</span></td>
+            <td><span class="badge badge-bull">Core Long</span></td>
+            <td class="thesis-cell">Gov't-named JV partner; existing China ops</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="ticker-sym">MGA</div>
+              <div class="company-name">Magna International</div>
+            </td>
+            <td><span class="price-now">$58.85</span></td>
+            <td>
+              <div class="spark-wrap">
+                <span class="spark-bar" style="width:20px;background:var(--green);"></span>
+                <span class="ret-up">+12.1%</span>
+              </div>
+            </td>
+            <td><span class="ret-up">+48.5%</span></td>
+            <td><span class="badge badge-bull">Core Long</span></td>
+            <td class="thesis-cell">Tier 1 JV champion; dividend while you wait</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="ticker-sym">MRE.TO</div>
+              <div class="company-name">Martinrea Intl</div>
+            </td>
+            <td><span class="price-now">C$12.50</span></td>
+            <td>
+              <div class="spark-wrap">
+                <span class="spark-bar" style="width:8px;background:var(--green);"></span>
+                <span class="ret-up">+5.9%</span>
+              </div>
+            </td>
+            <td><span class="ret-up">+25.6%</span></td>
+            <td><span class="badge badge-watch">Event Play</span></td>
+            <td class="thesis-cell">Beat Q4 estimates; asymmetric risk/reward</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="ticker-sym">BB</div>
+              <div class="company-name">BlackBerry / QNX</div>
+            </td>
+            <td><span class="price-now">$3.44</span></td>
+            <td>
+              <div class="spark-wrap">
+                <span class="spark-bar" style="width:16px;background:var(--red);"></span>
+                <span class="ret-down">−10.6%</span>
+              </div>
+            </td>
+            <td><span class="ret-down">−28.3%</span></td>
+            <td><span class="badge badge-spec">Speculative</span></td>
+            <td class="thesis-cell">QNX = security buffer; 255M vehicles; mispriced</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="ticker-sym">VET</div>
+              <div class="company-name">VeChain</div>
+            </td>
+            <td><span class="price-now">$0.0082</span></td>
+            <td>
+              <div class="spark-wrap">
+                <span class="spark-bar" style="width:32px;background:var(--red);"></span>
+                <span class="ret-down">−30.5%</span>
+              </div>
+            </td>
+            <td><span class="ret-down">−28.7%</span></td>
+            <td><span class="badge badge-spec">Crypto Play</span></td>
+            <td class="thesis-cell">Battery passport infrastructure; EU mandate 2026</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ══ COMPARE & CONTRAST VISUAL ══ -->
+    <div id="map"></div>
+    <div class="part-break" style="margin-top:44px;">
+      <div class="part-num-badge">VISUALIZATION</div>
+      <div class="part-break-line"></div>
+    </div>
+    <span class="section-label">Return vs. Risk — All Five Tickers</span>
+    <h2 class="section-title">Compare & Contrast: Risk/Reward Map</h2>
+
+    <p>The chart below plots each ticker by <strong>upside potential</strong> (x-axis) against <strong>risk level</strong> (y-axis). Bubble size reflects position sizing recommendation. Use this to decide where to allocate first.</p>
+
+    <div class="vis-container">
+      <div class="vis-header">Risk vs. Upside Potential — Canada-China EV Corridor Plays</div>
+      <div class="vis-body">
+        <svg id="scatter" viewBox="0 0 700 380" style="width:100%;display:block;" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <style>
+              .ax-label { font-family: 'IBM Plex Mono', monospace; font-size: 10px; fill: #6b6258; letter-spacing: 1px; }
+              .tick-label { font-family: 'IBM Plex Mono', monospace; font-size: 9px; fill: #6b6258; }
+              .node-label { font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 500; }
+              .node-sub   { font-family: 'IBM Plex Mono', monospace; font-size: 9px; fill: #6b6258; }
+            </style>
+          </defs>
+
+          <!-- Background -->
+          <rect width="700" height="380" fill="#ffffff"/>
+
+          <!-- Quadrant shading -->
+          <!-- Low risk, high upside = ideal (bottom right) -->
+          <rect x="380" y="20" width="290" height="175" fill="rgba(26,107,60,0.05)"/>
+          <text x="660" y="38" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="9" fill="rgba(26,107,60,0.5)" letter-spacing="1">SWEET SPOT</text>
+          <!-- High risk, high upside = speculative (top right) -->
+          <rect x="380" y="195" width="290" height="155" fill="rgba(191,26,47,0.04)"/>
+          <text x="660" y="213" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="9" fill="rgba(191,26,47,0.4)" letter-spacing="1">SPECULATIVE</text>
+
+          <!-- Grid lines -->
+          <line x1="80" y1="20" x2="80" y2="330" stroke="#ddd5c5" stroke-width="1"/>
+          <line x1="80" y1="330" x2="670" y2="330" stroke="#ddd5c5" stroke-width="1"/>
+
+          <!-- Vertical grid -->
+          <line x1="230" y1="20" x2="230" y2="330" stroke="#ece8e0" stroke-width="1" stroke-dasharray="4,4"/>
+          <line x1="380" y1="20" x2="380" y2="330" stroke="#ece8e0" stroke-width="1" stroke-dasharray="4,4"/>
+          <line x1="530" y1="20" x2="530" y2="330" stroke="#ece8e0" stroke-width="1" stroke-dasharray="4,4"/>
+          <!-- Horizontal grid -->
+          <line x1="80" y1="195" x2="670" y2="195" stroke="#ece8e0" stroke-width="1" stroke-dasharray="4,4"/>
+          <line x1="80" y1="112" x2="670" y2="112" stroke="#ece8e0" stroke-width="1" stroke-dasharray="4,4"/>
+          <line x1="80" y1="278" x2="670" y2="278" stroke="#ece8e0" stroke-width="1" stroke-dasharray="4,4"/>
+
+          <!-- X-axis ticks -->
+          <text x="80"  y="348" text-anchor="middle" class="tick-label">0%</text>
+          <text x="230" y="348" text-anchor="middle" class="tick-label">25%</text>
+          <text x="380" y="348" text-anchor="middle" class="tick-label">50%</text>
+          <text x="530" y="348" text-anchor="middle" class="tick-label">75%</text>
+          <text x="670" y="348" text-anchor="middle" class="tick-label">100%+</text>
+
+          <!-- Y-axis ticks -->
+          <text x="72" y="333" text-anchor="end" class="tick-label">LOW</text>
+          <text x="72" y="250" text-anchor="end" class="tick-label">MED</text>
+          <text x="72" y="167" text-anchor="end" class="tick-label">HIGH</text>
+          <text x="72" y="84"  text-anchor="end" class="tick-label">V.HIGH</text>
+
+          <!-- Axis labels -->
+          <text x="375" y="368" text-anchor="middle" class="ax-label">UPSIDE POTENTIAL →</text>
+          <text x="18" y="195" text-anchor="middle" class="ax-label" transform="rotate(-90,18,195)">RISK LEVEL →</text>
+
+          <!-- ── NODES ──
+               x: upside (80=0%, 670=100%+)
+               y: risk   (330=low, 20=v.high)
+               r: position size recommendation
+          -->
+
+          <!-- LNR.TO: upside ~20%, risk LOW → x=302, y=305 -->
+          <circle cx="302" cy="305" r="30" fill="rgba(26,107,60,0.15)" stroke="#1a6b3c" stroke-width="2"/>
+          <text x="302" cy="305" class="node-label" text-anchor="middle" fill="#1a6b3c">
+            <tspan x="302" y="301">LNR.TO</tspan>
+          </text>
+          <text x="302" y="318" text-anchor="middle" class="node-sub">30-40% alloc</text>
+
+          <!-- MGA: upside ~27%, risk LOW-MED → x=335, y=272 -->
+          <circle cx="358" cy="272" r="28" fill="rgba(26,107,60,0.12)" stroke="#1a6b3c" stroke-width="2"/>
+          <text class="node-label" text-anchor="middle" fill="#1a6b3c">
+            <tspan x="358" y="268">MGA</tspan>
+          </text>
+          <text x="358" y="282" text-anchor="middle" class="node-sub">30-40% alloc</text>
+
+          <!-- MRE.TO: upside ~32%, risk MED → x=375, y=220 -->
+          <circle cx="410" cy="215" r="22" fill="rgba(160,120,48,0.12)" stroke="#a07830" stroke-width="2"/>
+          <text class="node-label" text-anchor="middle" fill="#a07830">
+            <tspan x="410" y="211">MRE.TO</tspan>
+          </text>
+          <text x="410" y="224" text-anchor="middle" class="node-sub">event-driven</text>
+
+          <!-- BB: upside ~48%, risk HIGH → x=475, y=148 -->
+          <circle cx="475" cy="148" r="18" fill="rgba(30,45,61,0.1)" stroke="#1e2d3d" stroke-width="2"/>
+          <text class="node-label" text-anchor="middle" fill="#1e2d3d">
+            <tspan x="475" y="144">BB</tspan>
+          </text>
+          <text x="475" y="157" text-anchor="middle" class="node-sub">10-20% alloc</text>
+
+          <!-- VET: upside ~87%, risk V.HIGH → x=600, y=65 -->
+          <circle cx="600" cy="68" r="16" fill="rgba(191,26,47,0.1)" stroke="#bf1a2f" stroke-width="2"/>
+          <text class="node-label" text-anchor="middle" fill="#bf1a2f">
+            <tspan x="600" y="64">VET</tspan>
+          </text>
+          <text x="600" y="77" text-anchor="middle" class="node-sub">small position</text>
+
+          <!-- Legend -->
+          <rect x="490" y="285" width="170" height="42" rx="2" fill="white" stroke="#ddd5c5" stroke-width="1"/>
+          <text x="500" y="298" font-family="IBM Plex Mono, monospace" font-size="8" fill="#6b6258" letter-spacing="1">BUBBLE SIZE = POSITION SIZE</text>
+          <text x="500" y="312" font-family="IBM Plex Mono, monospace" font-size="8" fill="#6b6258" letter-spacing="1">SHADING = QUADRANT TYPE</text>
+          <text x="500" y="323" font-family="IBM Plex Mono, monospace" font-size="8" fill="#6b6258" letter-spacing="1">GREEN ZONE = SWEET SPOT</text>
+        </svg>
+      </div>
+    </div>
+
+    <!-- ══ PART I: SHORT-TERM ══ -->
+    <div id="short"></div>
+    <div class="part-break">
+      <div class="part-num-badge">PART I — SHORT-TERM</div>
+      <div class="part-break-line"></div>
+    </div>
+    <span class="section-label">1–6 Month Horizon · Event-Driven · Higher Risk</span>
+    <h2 class="section-title">Trading Opportunities</h2>
+
+    <p>These are <strong>tactical, catalyst-driven plays</strong>. Size them smaller, use stop losses, and watch the specific triggers below.</p>
+
+    <!-- VET TRADE CARD -->
+    <div class="trade-card">
+      <div class="trade-card-header">
+        <div>
+          <div class="trade-ticker">VET &nbsp;<span class="badge badge-spec">Crypto</span></div>
+          <div class="trade-company">VeChain — Battery Passport Infrastructure</div>
+        </div>
+        <div>
+          <div class="trade-price">$0.0082</div>
+          <div class="trade-ret ret-down">Since deal: −30.5%</div>
+        </div>
+      </div>
+      <div class="trade-body">
+        <p>The Canada-China deal requires <strong>battery passports</strong>—immutable provenance records for ESG and tariff compliance. VeChain already does this: Walmart China uses it for food traceability, BMW for parts authentication. The EU just mandated Digital Product Passports (effective 2026). The selloff has been indiscriminate—enterprise adoption stories punished alongside meme coins.</p>
+        <div class="trade-levels">
+          <div class="level-cell">
+            <div class="level-label">Entry Zone</div>
+            <div class="level-val entry">$0.0075–$0.0080</div>
+          </div>
+          <div class="level-cell">
+            <div class="level-label">Target 1</div>
+            <div class="level-val target">$0.012 (+50%)</div>
+          </div>
+          <div class="level-cell">
+            <div class="level-label">Stop Loss</div>
+            <div class="level-val stop">Below $0.0065</div>
+          </div>
+          <div class="level-cell">
+            <div class="level-label">Target 2 (stretch)</div>
+            <div class="level-val target">$0.015 (+87%)</div>
+          </div>
+          <div class="level-cell" style="grid-column:span 2;">
+            <div class="level-label">Catalyst Watch</div>
+            <div class="level-val horizon">JV announcements citing "traceability" · EU Digital Product Passport details · Battery passport mandate news</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MRE TRADE CARD -->
+    <div class="trade-card">
+      <div class="trade-card-header">
+        <div>
+          <div class="trade-ticker">MRE.TO &nbsp;<span class="badge badge-watch">Event Play</span></div>
+          <div class="trade-company">Martinrea International — Blowout Q4, Waiting for Direction</div>
+        </div>
+        <div>
+          <div class="trade-price">C$12.50</div>
+          <div class="trade-ret ret-up">Since deal: +5.9%</div>
+        </div>
+      </div>
+      <div class="trade-body">
+        <p>Martinrea just posted a blowout Q4: adjusted EPS of <strong>C$0.67 vs. estimates of C$0.48</strong>, swinging from a C$0.21 loss a year ago. Sales hit C$1.19B, up 3.2%. The company explicitly cited "benefits from global trade rebalancing." Yet the stock hasn't ripped — BMO lowered its target to C$10.50 while TD Securities sits at C$15.00 with a buy. The stock waits for direction. Analyst consensus: four buys, one hold.</p>
+        <div class="trade-levels">
+          <div class="level-cell">
+            <div class="level-label">Entry Zone</div>
+            <div class="level-val entry">C$11.50–C$12.50</div>
+          </div>
+          <div class="level-cell">
+            <div class="level-label">Target 1</div>
+            <div class="level-val target">C$15.00 (+20%)</div>
+          </div>
+          <div class="level-cell">
+            <div class="level-label">Stop Loss</div>
+            <div class="level-val stop">Below C$11.00</div>
+          </div>
+          <div class="level-cell">
+            <div class="level-label">Target 2 (52-wk high)</div>
+            <div class="level-val target">C$16.50 (+32%)</div>
+          </div>
+          <div class="level-cell" style="grid-column:span 2;">
+            <div class="level-label">Catalyst Watch</div>
+            <div class="level-val horizon">Q1 2026 earnings (May) · JV announcement with Chinese partner · New contract win</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══ PART II: LONG-TERM ══ -->
+    <div id="long"></div>
+    <div class="part-break">
+      <div class="part-num-badge">PART II — LONG-TERM</div>
+      <div class="part-break-line"></div>
+    </div>
+    <span class="section-label">6–24 Month Horizon · Core Holdings · Build Positions</span>
+    <h2 class="section-title">Structural Plays</h2>
+
+    <p>These are the <strong>"pick and shovel"</strong> names — essential regardless of which automaker wins. Build these as core positions; add on weakness.</p>
+
+    <div class="stats">
+      <div class="stat">
+        <span class="stat-n up">+79.9%</span>
+        <span class="stat-l">LNR.TO<br>1-Year Return</span>
+      </div>
+      <div class="stat">
+        <span class="stat-n up">+48.5%</span>
+        <span class="stat-l">MGA<br>From 52-wk Low</span>
+      </div>
+      <div class="stat">
+        <span class="stat-n gold">+48%</span>
+        <span class="stat-l">BB Analyst<br>Upside Target</span>
+      </div>
+    </div>
+
+    <div class="subsection-title">Linamar (LNR.TO) — The Clear Winner</div>
+    <p>The Canadian government explicitly named Linamar as a preferred JV partner. Already operating in China, 34,000 employees globally, C$10B in annual revenue, ~8.5x earnings. At this valuation, it's not expensive despite the run. As BYD and Chery finalize assembly plans — Minister Joly met both in January — Linamar is first in line for order flow acceleration. <strong>Accumulate on pullbacks to C$85–C$90.</strong></p>
+
+    <div class="subsection-title">Magna International (MGA) — Scale + Dividend</div>
+    <p>Magna is Tier 1 at scale — any Canadian EV production flows through its supply chain. Down from $69 highs, the entry here is better than January. Pays a modest ~3% dividend while you wait for JV news to crystallize. P/E of 19.8 reflects its size; the risk is legacy Detroit exposure as Chinese imports take share. <strong>Accumulate at current levels; add on weakness to $55.</strong></p>
+
+    <div class="subsection-title">BlackBerry / QNX (BB) — Mispriced Optionality</div>
+    <p>Security concerns about Chinese software? QNX is the answer. A Canadian OS running in 255 million vehicles — including Chinese brands Geely, Dongfeng, and GAC — it gives Ottawa political cover while giving Chinese engineers a platform they already know. BB is down 28% over the past year; the market treats it as a legacy tech story. Recent wins include the Haleytek partnership for Volvo's EX60 EV SUV. If Canada formally designates QNX as the "security buffer" for Chinese JVs, the stock re-rates instantly. <strong>Speculative allocation: 5–10%. Add on weakness to $3.00.</strong></p>
+
+    <div class="pull">
+      <blockquote>"We believe these excellent Canadian companies can collaborate with Chinese EV companies to create Sino-Canadian joint venture vehicles for sale around the world."</blockquote>
+      <cite>— Canadian Industrial Minister Mélanie Joly, January 2026</cite>
+    </div>
+
+    <!-- ══ RISKS ══ -->
+    <div id="risks"></div>
+    <div class="part-break">
+      <div class="part-num-badge">PART III — RISKS</div>
+      <div class="part-break-line"></div>
+    </div>
+    <h2 class="section-title">Don't Skip This</h2>
+
+    <div class="risk-table-wrap">
+      <table class="risk">
+        <thead>
+          <tr>
+            <th>Risk Factor</th>
+            <th>Timeline</th>
+            <th>Level</th>
+            <th>How to Hedge</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>USMCA Review</strong> — tariffs could spike overnight</td>
+            <td style="font-family:'IBM Plex Mono',monospace;font-size:11px;white-space:nowrap;">July 2026</td>
+            <td><span class="risk-high">HIGH</span></td>
+            <td style="font-size:12px;color:var(--muted);">Take profits on Canadian auto names by late June</td>
+          </tr>
+          <tr>
+            <td><strong>U.S. Retaliation</strong> — Bessent/Trump warned explicitly</td>
+            <td style="font-family:'IBM Plex Mono',monospace;font-size:11px;white-space:nowrap;">Any time</td>
+            <td><span class="risk-high">HIGH</span></td>
+            <td style="font-size:12px;color:var(--muted);">Reduce exposure immediately on political headlines</td>
+          </tr>
+          <tr>
+            <td><strong>Manufacturing Delays</strong> — JVs take 12-24 months to build</td>
+            <td style="font-family:'IBM Plex Mono',monospace;font-size:11px;white-space:nowrap;">Ongoing</td>
+            <td><span class="risk-med">MED</span></td>
+            <td style="font-size:12px;color:var(--muted);">Don't front-run; wait for signed deal announcements</td>
+          </tr>
+          <tr>
+            <td><strong>Crypto Bear Market</strong> — VET may drift lower without catalysts</td>
+            <td style="font-family:'IBM Plex Mono',monospace;font-size:11px;white-space:nowrap;">Ongoing</td>
+            <td><span class="risk-high">HIGH</span></td>
+            <td style="font-size:12px;color:var(--muted);">Use stop losses; size position small; don't average down blindly</td>
+          </tr>
+          <tr>
+            <td><strong>Earnings Misses</strong> — auto sector cyclicality</td>
+            <td style="font-family:'IBM Plex Mono',monospace;font-size:11px;white-space:nowrap;">Quarterly</td>
+            <td><span class="risk-med">MED</span></td>
+            <td style="font-size:12px;color:var(--muted);">Diversify across 3–5 names; no single-stock concentration</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <!-- ══ BOTTOM LINE ══ -->
+    <div id="bottom"></div>
+    <div class="bottom-line">
+      <div class="bl-label">◆ The Bottom Line</div>
+      <p>Linamar has been the clear winner (+80% in a year, +30% since the deal). Magna and Martinrea offer value post-pullback. BB and VET are "show me" stories — great infrastructure, hated stocks. If the Canada-China corridor materializes as Ottawa intends, these are the tickers to watch.</p>
+
+      <div class="bl-table-wrap">
+        <table class="bl">
+          <thead>
+            <tr>
+              <th>Ticker</th>
+              <th>Horizon</th>
+              <th>Entry</th>
+              <th>Target</th>
+              <th>Allocation</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><span class="bl-sym">LNR.TO</span></td>
+              <td>Long-term core</td>
+              <td>C$85–C$93</td>
+              <td class="bl-green">C$110+</td>
+              <td class="bl-gold">30–40%</td>
+            </tr>
+            <tr>
+              <td><span class="bl-sym">MGA</span></td>
+              <td>Long-term core</td>
+              <td>$55–$58</td>
+              <td class="bl-green">$75+</td>
+              <td class="bl-gold">30–40%</td>
+            </tr>
+            <tr>
+              <td><span class="bl-sym">BB</span></td>
+              <td>Speculative long</td>
+              <td>$3.00–$3.44</td>
+              <td class="bl-green">$5.12</td>
+              <td class="bl-gold">10–20%</td>
+            </tr>
+            <tr>
+              <td><span class="bl-sym">MRE.TO</span></td>
+              <td>Event-driven</td>
+              <td>C$11.50–C$12.50</td>
+              <td class="bl-green">C$15–C$16.50</td>
+              <td class="bl-gold">Stop: C$11</td>
+            </tr>
+            <tr>
+              <td><span class="bl-sym">VET</span></td>
+              <td>Short-term speculative</td>
+              <td>$0.0075–$0.0080</td>
+              <td class="bl-green">$0.012–$0.015</td>
+              <td class="bl-gold">Stop: $0.0065</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div><!-- /article -->
+
+  <div class="footer">
+    <div class="footer-name">Market Briefs</div>
+    <div class="footer-note">
+      INDEPENDENT RESEARCH &nbsp;·&nbsp; MARCH 8, 2026 &nbsp;·&nbsp; ISSUE #13
+    </div>
+    <div class="footer-disc">This newsletter is for informational purposes only and does not constitute investment advice. Always conduct your own due diligence. Past performance is not indicative of future results.</div>
+  </div>
+</div><!-- /wrap -->
+
+<script>
+  // Smooth pill navigation
+  document.querySelectorAll('.pill').forEach(pill => {
+    pill.addEventListener('click', function(e) {
+      document.querySelectorAll('.pill').forEach(p => p.classList.remove('active'));
+      this.classList.add('active');
+    });
+  });
+
+  // Highlight active section on scroll
+  const sections = ['snapshot','short','long','map','risks','bottom'];
+  const pills = document.querySelectorAll('.pill');
+  window.addEventListener('scroll', () => {
+    let current = '';
+    sections.forEach(id => {
+      const el = document.getElementById(id);
+      if (el && window.scrollY >= el.offsetTop - 120) current = id;
+    });
+    pills.forEach(p => {
+      p.classList.toggle('active', p.getAttribute('href') === '#' + current);
+    });
+  });
+</script>
+</body>
+</html>
