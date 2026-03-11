@@ -3,22 +3,22 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Market Briefs — Canada-China EV Deal</title>
+<title>Detroit Market Updates — Ottawa-Detroit Corridor</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;0,900;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root {
-  --ink:     #0f0e0c;
-  --paper:   #faf8f4;
-  --cream:   #f2ede4;
+  --ink:     #f0eeea;
+  --paper:   #141414;
+  --cream:   #1e1e1e;
   --red:     #bf1a2f;
-  --gold:    #a07830;
-  --green:   #1a6b3c;
+  --gold:    #d4a84b;
+  --green:   #3dba7a;
   --steel:   #1e2d3d;
-  --muted:   #6b6258;
-  --rule:    #ddd5c5;
-  --up:      #1a6b3c;
+  --muted:   #a0a0a0;
+  --rule:    #2e2e2e;
+  --up:      #3dba7a;
   --down:    #bf1a2f;
-  --neutral: #a07830;
+  --neutral: #d4a84b;
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -26,17 +26,17 @@
 html { scroll-behavior: smooth; }
 
 body {
-  background: var(--paper);
-  color: var(--ink);
+  background: #141414;
+  color: #f0eeea;
   font-family: 'Libre Baskerville', Georgia, serif;
   font-size: 17px;
-  line-height: 1.8;
+  line-height: 1.85;
   -webkit-font-smoothing: antialiased;
 }
 
 /* ── MASTHEAD ── */
 .masthead {
-  background: var(--ink);
+  background: #0a0a0a;
   padding: 32px 24px 24px;
   text-align: center;
   border-bottom: 2px solid var(--gold);
@@ -137,12 +137,12 @@ body {
   transition: all 0.2s;
   cursor: pointer;
 }
-.pill:hover, .pill.active { background: var(--ink); color: #faf8f4; border-color: var(--ink); }
+.pill:hover, .pill.active { background: #0a0a0a; color: #ffffff; border-color: var(--ink); }
 
 /* ── ARTICLE CONTENT ── */
 .article { padding: 48px 0 24px; }
 
-p { margin-bottom: 20px; font-size: 16.5px; }
+p { margin-bottom: 20px; font-size: 16.5px; color: #f0eeea; }
 
 .section-label {
   font-family: 'IBM Plex Mono', monospace;
@@ -176,7 +176,7 @@ p { margin-bottom: 20px; font-size: 16.5px; }
   border-left: 3px solid var(--red);
   margin: 32px 0;
   padding: 14px 22px;
-  background: rgba(191,26,47,0.04);
+  background: rgba(191,26,47,0.12);
 }
 .pull blockquote {
   font-family: 'Playfair Display', serif;
@@ -205,7 +205,7 @@ p { margin-bottom: 20px; font-size: 16.5px; }
   gap: 1px;
 }
 .stat {
-  background: var(--paper);
+  background: #1e1e1e;
   padding: 20px 16px;
   text-align: center;
 }
@@ -239,15 +239,15 @@ p { margin-bottom: 20px; font-size: 16.5px; }
   gap: 20px;
 }
 .part-num-badge {
-  background: var(--ink);
-  color: #faf8f4;
+  background: #bf1a2f;
+  color: #ffffff;
   font-family: 'IBM Plex Mono', monospace;
   font-size: 9px;
   letter-spacing: 3px;
   padding: 8px 14px;
   white-space: nowrap;
 }
-.part-break-line { height: 2px; background: var(--ink); }
+.part-break-line { height: 2px; background: #bf1a2f; }
 
 /* ── PERFORMANCE TABLE ── */
 .perf-table-wrap {
@@ -263,7 +263,7 @@ table.perf {
   min-width: 560px;
 }
 table.perf thead tr {
-  background: var(--ink);
+  background: #0a0a0a;
 }
 table.perf thead th {
   font-family: 'IBM Plex Mono', monospace;
@@ -277,7 +277,7 @@ table.perf thead th {
   font-weight: 400;
 }
 table.perf tbody tr { border-bottom: 1px solid var(--rule); transition: background 0.15s; }
-table.perf tbody tr:hover { background: var(--cream); }
+table.perf tbody tr:hover { background: #222222; }
 table.perf tbody td { padding: 11px 14px; vertical-align: middle; }
 .ticker-sym {
   font-family: 'IBM Plex Mono', monospace;
@@ -301,10 +301,10 @@ table.perf tbody td { padding: 11px 14px; vertical-align: middle; }
   text-transform: uppercase;
   white-space: nowrap;
 }
-.badge-bull   { background: #e8f5ee; color: var(--green); border: 1px solid #b8ddc8; }
-.badge-bear   { background: #fdeef0; color: var(--red);   border: 1px solid #f0c0c8; }
-.badge-watch  { background: #fdf5e8; color: var(--gold);  border: 1px solid #e0c880; }
-.badge-spec   { background: #eef3fa; color: var(--steel); border: 1px solid #b8cce0; }
+.badge-bull   { background: #1a3326; color: var(--green); border: 1px solid #b8ddc8; }
+.badge-bear   { background: #3a1520; color: var(--red);   border: 1px solid #f0c0c8; }
+.badge-watch  { background: #332510; color: var(--gold);  border: 1px solid #e0c880; }
+.badge-spec   { background: #182030; color: var(--steel); border: 1px solid #b8cce0; }
 
 /* ── RETURN SPARKLINE ── */
 .spark-wrap { display: flex; align-items: center; gap: 8px; }
@@ -327,7 +327,7 @@ table.perf tbody td { padding: 11px 14px; vertical-align: middle; }
   grid-template-columns: 1fr auto;
   align-items: center;
   padding: 16px 20px;
-  background: var(--cream);
+  background: #222222;
   border-bottom: 1px solid var(--rule);
   gap: 12px;
 }
@@ -357,7 +357,7 @@ table.perf tbody td { padding: 11px 14px; vertical-align: middle; }
   margin-top: 16px;
 }
 .level-cell {
-  background: var(--paper);
+  background: #1e1e1e;
   padding: 12px 14px;
 }
 .level-label {
@@ -383,7 +383,7 @@ table.perf tbody td { padding: 11px 14px; vertical-align: middle; }
 .vis-container {
   margin: 32px 0;
   border: 1px solid var(--rule);
-  background: #fff;
+  background: #1e1e1e;
   overflow: hidden;
 }
 .vis-header {
@@ -421,7 +421,7 @@ table.risk thead th {
   font-weight: 400;
 }
 table.risk tbody tr { border-bottom: 1px solid var(--rule); }
-table.risk tbody tr:hover { background: var(--cream); }
+table.risk tbody tr:hover { background: #222222; }
 table.risk tbody td { padding: 11px 14px; vertical-align: top; font-size: 13px; }
 .risk-high   { color: var(--red);    font-family: 'IBM Plex Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: 1px; }
 .risk-med    { color: var(--gold);   font-family: 'IBM Plex Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: 1px; }
@@ -429,7 +429,7 @@ table.risk tbody td { padding: 11px 14px; vertical-align: top; font-size: 13px; 
 
 /* ── BOTTOM LINE ── */
 .bottom-line {
-  background: var(--ink);
+  background: #0a0a0a;
   padding: 36px 32px;
   margin: 48px 0 32px;
   position: relative;
@@ -531,14 +531,14 @@ hr.rule {
 
 <!-- MASTHEAD -->
 <div class="masthead">
-  <div class="pub-tag">Independent Research · March 8, 2026</div>
-  <div class="pub-name">MARKET BRIEFS</div>
-  <div class="pub-meta">Issue #13 &nbsp;·&nbsp; Subscriber Edition &nbsp;·&nbsp; Not Financial Advice</div>
+  <div class="pub-tag">Ottawa-Detroit Corridor · Independent Research</div>
+  <div class="pub-name">DETROIT MARKET UPDATES</div>
+  <div class="pub-meta">Ottawa-Detroit Corridor &nbsp;·&nbsp; Not Financial Advice</div>
 </div>
 
 <!-- HERO -->
 <div class="hero">
-  <div class="hero-label">Special Report</div>
+  <div class="hero-label">Detroit Market Updates — Ottawa-Detroit Corridor</div>
   <h1 class="hero-title">The Canada–China EV Deal:<br><em>Short-Term Trades</em> & Long-Term Positions</h1>
   <p class="hero-sub">Ottawa rewrote the North American auto playbook. Here's exactly how much investors have made — and where the next moves are.</p>
 </div>
@@ -681,15 +681,15 @@ hr.rule {
         <svg id="scatter" viewBox="0 0 700 380" style="width:100%;display:block;" xmlns="http://www.w3.org/2000/svg">
           <defs>
             <style>
-              .ax-label { font-family: 'IBM Plex Mono', monospace; font-size: 10px; fill: #6b6258; letter-spacing: 1px; }
-              .tick-label { font-family: 'IBM Plex Mono', monospace; font-size: 9px; fill: #6b6258; }
+              .ax-label { font-family: 'IBM Plex Mono', monospace; font-size: 10px; fill: #e0ddd8; letter-spacing: 1px; }
+              .tick-label { font-family: 'IBM Plex Mono', monospace; font-size: 9px; fill: #e0ddd8; }
               .node-label { font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 500; }
-              .node-sub   { font-family: 'IBM Plex Mono', monospace; font-size: 9px; fill: #6b6258; }
+              .node-sub   { font-family: 'IBM Plex Mono', monospace; font-size: 9px; fill: #e0ddd8; }
             </style>
           </defs>
 
           <!-- Background -->
-          <rect width="700" height="380" fill="#ffffff"/>
+          <rect width="700" height="380" fill="#1e1e1e"/>
 
           <!-- Quadrant shading -->
           <!-- Low risk, high upside = ideal (bottom right) -->
@@ -736,45 +736,45 @@ hr.rule {
           -->
 
           <!-- LNR.TO: upside ~20%, risk LOW → x=302, y=305 -->
-          <circle cx="302" cy="305" r="30" fill="rgba(26,107,60,0.15)" stroke="#1a6b3c" stroke-width="2"/>
-          <text x="302" cy="305" class="node-label" text-anchor="middle" fill="#1a6b3c">
+          <circle cx="302" cy="305" r="30" fill="rgba(26,107,60,0.15)" stroke="#4caf82" stroke-width="2"/>
+          <text x="302" cy="305" class="node-label" text-anchor="middle" fill="#4caf82">
             <tspan x="302" y="301">LNR.TO</tspan>
           </text>
           <text x="302" y="318" text-anchor="middle" class="node-sub">30-40% alloc</text>
 
           <!-- MGA: upside ~27%, risk LOW-MED → x=335, y=272 -->
-          <circle cx="358" cy="272" r="28" fill="rgba(26,107,60,0.12)" stroke="#1a6b3c" stroke-width="2"/>
-          <text class="node-label" text-anchor="middle" fill="#1a6b3c">
+          <circle cx="358" cy="272" r="28" fill="rgba(26,107,60,0.12)" stroke="#4caf82" stroke-width="2"/>
+          <text class="node-label" text-anchor="middle" fill="#4caf82">
             <tspan x="358" y="268">MGA</tspan>
           </text>
           <text x="358" y="282" text-anchor="middle" class="node-sub">30-40% alloc</text>
 
           <!-- MRE.TO: upside ~32%, risk MED → x=375, y=220 -->
-          <circle cx="410" cy="215" r="22" fill="rgba(160,120,48,0.12)" stroke="#a07830" stroke-width="2"/>
-          <text class="node-label" text-anchor="middle" fill="#a07830">
+          <circle cx="410" cy="215" r="22" fill="rgba(160,120,48,0.12)" stroke="#d4a84b" stroke-width="2"/>
+          <text class="node-label" text-anchor="middle" fill="#d4a84b">
             <tspan x="410" y="211">MRE.TO</tspan>
           </text>
           <text x="410" y="224" text-anchor="middle" class="node-sub">event-driven</text>
 
           <!-- BB: upside ~48%, risk HIGH → x=475, y=148 -->
-          <circle cx="475" cy="148" r="18" fill="rgba(30,45,61,0.1)" stroke="#1e2d3d" stroke-width="2"/>
-          <text class="node-label" text-anchor="middle" fill="#1e2d3d">
+          <circle cx="475" cy="148" r="18" fill="rgba(30,45,61,0.1)" stroke="#7eb3d4" stroke-width="2"/>
+          <text class="node-label" text-anchor="middle" fill="#7eb3d4">
             <tspan x="475" y="144">BB</tspan>
           </text>
           <text x="475" y="157" text-anchor="middle" class="node-sub">10-20% alloc</text>
 
           <!-- VET: upside ~87%, risk V.HIGH → x=600, y=65 -->
-          <circle cx="600" cy="68" r="16" fill="rgba(191,26,47,0.1)" stroke="#bf1a2f" stroke-width="2"/>
-          <text class="node-label" text-anchor="middle" fill="#bf1a2f">
+          <circle cx="600" cy="68" r="16" fill="rgba(191,26,47,0.1)" stroke="#f06070" stroke-width="2"/>
+          <text class="node-label" text-anchor="middle" fill="#f06070">
             <tspan x="600" y="64">VET</tspan>
           </text>
           <text x="600" y="77" text-anchor="middle" class="node-sub">small position</text>
 
           <!-- Legend -->
-          <rect x="490" y="285" width="170" height="42" rx="2" fill="white" stroke="#ddd5c5" stroke-width="1"/>
-          <text x="500" y="298" font-family="IBM Plex Mono, monospace" font-size="8" fill="#6b6258" letter-spacing="1">BUBBLE SIZE = POSITION SIZE</text>
-          <text x="500" y="312" font-family="IBM Plex Mono, monospace" font-size="8" fill="#6b6258" letter-spacing="1">SHADING = QUADRANT TYPE</text>
-          <text x="500" y="323" font-family="IBM Plex Mono, monospace" font-size="8" fill="#6b6258" letter-spacing="1">GREEN ZONE = SWEET SPOT</text>
+          <rect x="490" y="285" width="170" height="42" rx="2" fill="#1e1e1e" stroke="#ddd5c5" stroke-width="1"/>
+          <text x="500" y="298" font-family="IBM Plex Mono, monospace" font-size="8" fill="#e0ddd8" letter-spacing="1">BUBBLE SIZE = POSITION SIZE</text>
+          <text x="500" y="312" font-family="IBM Plex Mono, monospace" font-size="8" fill="#e0ddd8" letter-spacing="1">SHADING = QUADRANT TYPE</text>
+          <text x="500" y="323" font-family="IBM Plex Mono, monospace" font-size="8" fill="#e0ddd8" letter-spacing="1">GREEN ZONE = SWEET SPOT</text>
         </svg>
       </div>
     </div>
@@ -1022,9 +1022,10 @@ hr.rule {
   </div><!-- /article -->
 
   <div class="footer">
-    <div class="footer-name">Market Briefs</div>
+    <div class="footer-name">Detroit Market Updates</div>
+    <div class="footer-note" style="margin-bottom:4px;font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:3px;color:var(--muted);">OTTAWA-DETROIT CORRIDOR</div>
     <div class="footer-note">
-      INDEPENDENT RESEARCH &nbsp;·&nbsp; MARCH 8, 2026 &nbsp;·&nbsp; ISSUE #13
+      INDEPENDENT RESEARCH &nbsp;·&nbsp; OTTAWA-DETROIT CORRIDOR
     </div>
     <div class="footer-disc">This newsletter is for informational purposes only and does not constitute investment advice. Always conduct your own due diligence. Past performance is not indicative of future results.</div>
   </div>
